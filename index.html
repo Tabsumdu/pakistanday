@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Pakistan Day</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="start-screen">
+        <input type="text" id="name-input" placeholder="Please enter your name">
+        <div id="character-selection">
+            <video src="boy.mp4" alt="男孩" data-character="boy" onclick="selectCharacter('boy')" width="100" height="100" loop muted autoplay playsinline></video>
+            <video src="girl.mp4" alt="女孩" data-character="girl" onclick="selectCharacter('girl')" width="100" height="100" loop muted autoplay playsinline></video>
+        </div>
+        <p id="operation-guide">Controls: Use LEFT/RIGHT arrow keys to move, SPACEBAR to JUMP</p>
+    </div>
+    <div id="game-screen" style="display: none;">
+        <div id="score">Score: 0</div>
+        <div id="game-background">
+            <div id="character"></div>
+            <div id="platforms"></div>
+        </div>
+        <div id="question-screen" style="display: none;">
+            <p id="question"></p>
+            <button id="option-a"></button>
+            <button id="option-b"></button>
+            <div id="timer">Time Left: 10</div>
+        </div>
+        <div id="end-screen" style="display: none;">
+            <div id="animation">
+                <video id="celebrate-video" width="200" height="200" loop muted playsinline></video>
+            </div>
+            <p id="congrats-message"></p>
+            <p id="try-again-message" style="display: none;">Try Again!</p>
+            <button id="restart-button" onclick="restartGame()">Restart</button>
+        </div>
+    </div>
+    <audio id="background-music" src="bgm.mp3" loop></audio>
+    <audio id="collision-sound" src="collision.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+
+</html>
+    
