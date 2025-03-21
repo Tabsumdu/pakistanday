@@ -6,28 +6,28 @@ let currentQuestionIndex = 0;
 let timer;
 let questions = [
     {
-        question: 'What is the capital city of Pakistan？',
-        options: ['Lahore', 'Islamabad'],
+        question: 'Which historic site is known as the "Great Wall of Pakistan"?',
+        options: ['Rohtas Fort', 'Ranikot Fort'],
         correctAnswer: 1
     },
     {
-        question: 'What is the official language of Pakistan?',
-        options: ['English', 'Urdu'],
+        question: 'During the 2022 T20 Cricket World Cup, what was Shaheen Afridi’s fastest recorded delivery speed?',
+        options: ['161.3 km/h', '154.7 km/h'],
         correctAnswer: 1
     },
     {
-        question: 'Which colors are used on Pakistan National Flag？',
-        options: ['Green and White', 'Red and Blue'],
+        question: ' What is the name of Pakistan’s first lunar exploration mission?',
+        options: ['Crescent-I', 'Star & Moon Mission'],
         correctAnswer: 0
     },
     {
-        question: 'What is the national sport of Pakistan?',
-        options: ['Baseball', 'Hockey'],
-        correctAnswer: 1
+        question: 'In which field did Pakistan’s first Nobel Prize winner receive the award?',
+        options: ['Physics (Abdus Salam)', 'Literature (Sir Syed Ahmad Khan)'],
+        correctAnswer: 0
     },
     {
-        question: 'When is Pakistan Day celebrated?',
-        options: ['August 14th', 'March 23rd'],
+        question: 'In which event did Arshad Nadeem win Pakistan’s first Olympic gold medal in 40 years at the 2024 Paris Olympics?',
+        options: ['Shot Put', 'Javelin Throw'],
         correctAnswer: 1
     }
 ];
